@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" type="text/css" href="../index.css">
+
+<title>Roman Sokol's Webpage</title>
+
+<header>
+  <h2 class="serif">Film Pictures Febuary</h2>
+</header>
+<pre></pre>
+<nav>
+<ul>
+  <li><a href="../index.html" >Home</a></li>
+  <li class="dropdown">
+    <a class="active" ref="javascript:void(0)" class="dropbtn">Gallery</a>
+    <div class="dropdown-content">
+      <a class="active" href="film.html">Film</a>
+      <a href="../Digital/digital.html">Digital</a>
+    </div>
+  </li>
+  <li><a href="../Blog/blog.html">Writings</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Contact</a>
+    <div class="dropdown-content">
+      <a href="mailto:roman@sokol.com">Email</a>
+    </div>
+  </li>
+  <li style="float:right"><a href="../About/about.html">About</a></li>
+</ul>
+
+
+</nav>
+
+<pre>
+</pre>
+
+<article>
+
+	<style>{
+	float: right;
+	margin-right: 100px;
+}
+</style>
+
+
+<style>
+
+
+ div{
+	  display: block;
+	    margin-left: auto;
+	      margin-right: auto;
+	        width: 50%;
+ }
+   </style>
+
+   <body>
+
+	   <div class="gallery" style="padding: 10px; overflow: hidden; max-width:500px">
+		     <img class="filmgallery" src="February/_0A_0364.jpg" alt="Downtown building" style="width:100%">
+		       <img class="filmgallery" src="February/6322.jpg" alt=" Number 6322" style="width:100%">
+		         <img class="filmgallery" src="February/I'mBlue.jpg" alt="Blue House" style="width:100%">
+	   </div>
+
+	<script>
+		var myIndex = 0;
+carousel();
+
+function carousel() {
+	  var i;
+	  var x = document.getElementsByClassName("filmgallery");
+	  for (i = 0; i < x.length; i++) {
+		      x[i].style.display = "none";
+		    }
+	  myIndex++;
+	  if (myIndex > x.length) {myIndex = 1}
+	  x[myIndex-1].style.display = "block";
+	  setTimeout(carousel, 6000);
+}
+	</script>
+
+	<pre></pre><div style="background-color: #C09F80; padding: 10px; overflow: hidden;">
+<p><small><i>I took these pictures on my Canon A-1 with Portra 400 film stock</p></small></i>
+
+<p> I chose pretty buildings for february, there's nothing much else to say... Check out January pictures <a href="January/FilmJanuary.html">here</a>.</p>
+	</div>
+</body>
+</html>
