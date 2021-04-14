@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+	<head>
+<link rel="stylesheet" type="text/css" href="../index.css">
+<meta charset="UTF-8">
+<title>Roman Sokol</title>
+	</head>
+
+
+	<body>
+<nav class="menu">
+
+	<div class="nav-left">
+<ul>
+	<li><a href="../index.html">roman's webpage</a></li>
+</ul>
+	</div>
+
+	<div class="nav-right">
+<ul>
+  <li><a href="../a/about.html">about</a></li>
+  <li><a href="mailto:roman@sokol.com">contact</a></li>
+  <li><a href="../b/blog.html">writings</a></li>
+  <li><a href="../c/gallery.html">gallery</a></li>
+</ul>
+	</div>
+</nav>
+
+	   <div class="gallery" style="margin-left: auto;
+  margin-right: auto; padding: 10px; overflow: hidden; max-width:500px">
+		<img class="filmgallery" src="March/25A_0347.jpg" alt="Llamas" style="width:100%">
+		<img class="filmgallery" src="March/30A_0342.jpg" alt="Euro Delicatessen" style="width:100%">
+		 <img class="filmgallery" src="February/__8_0059_1.jpg" alt="Blue House" style="width:100%">
+	   </div>
+
+	<script>
+		var myIndex = 0;
+carousel();
+
+function carousel() {
+	  var i;
+	  var x = document.getElementsByClassName("filmgallery");
+	  for (i = 0; i < x.length; i++) {
+		      x[i].style.display = "none";
+		    }
+	  myIndex++;
+	  if (myIndex > x.length) {myIndex = 1}
+	  x[myIndex-1].style.display = "block";
+	  setTimeout(carousel, 6000);	}
+	</script>
+
+<div style="padding: 10px; overflow: hidden;">
+<p><small><i>I took these pictures on my Canon A-1 with Fuji Superia 400 film stock</p></small></i>
+	</div>
+</body>
+</html>
